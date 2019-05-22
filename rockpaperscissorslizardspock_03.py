@@ -1,3 +1,5 @@
+#8bitpro workshop#
+
 import random,time
 
 userScore = 0
