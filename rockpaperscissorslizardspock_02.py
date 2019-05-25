@@ -28,11 +28,11 @@ while True: #Infinite Loop
     elif userChoice[0].lower() == "s" and compChoice == "p":
         print("Scissors cuts Paper - User wins this round")
         time.sleep(1)
-        userScore = userScore + 1
+        userScore = userScore + 10
     elif userChoice[0].lower() == "p" and compChoice == "s":
         print("Scissors cuts Paper - Computer wins this round")
         time.sleep(1)
-        compScore = compScore + 1
+        compScore = compScore + 10
     elif userChoice[0].lower() == "p" and compChoice == "r":
         print("Paper wraps Rock - User wins this round")
         time.sleep(1)

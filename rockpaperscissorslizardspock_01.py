@@ -1,17 +1,17 @@
-#8bitpro workshop
+#8bitpro workshop 
 
 import random,time
 
 userScore = 0
 compScore = 0
 
-choices = ["r","p","s","l","k"]
+choices = ["r","p","s","l","sp"]
 
 rnd = 1
 
 while True: #Infinite Loop
     print("Round: ", rnd)
-    userChoice = input("What do you pick: (r)ock, (p)aper, (s)cissors, (l)izard or spoc(k)?")
+    userChoice = input("What do you pick: (r)ock, (p)aper, (s)cissors, (l)izard or (sp)ock?")
     compChoice = random.choice(choices)
     print("Computer chose: ", compChoice)
 
@@ -49,19 +49,19 @@ while True: #Infinite Loop
         print("Rock crushes Lizard - Computer wins this round!")
         time.sleep(1)
         compScore = compScore + 1
-    elif userChoice[0].lower() == "l" and compChoice == "k":
+    elif userChoice[0].lower() == "l" and compChoice == "sp":
         print("Lizard poisons Spock - User wins this round!")
         time.sleep(1)
         userScore = userScore + 1
-    elif userChoice[0].lower() == "k" and compChoice == "l":
+    elif userChoice[0].lower() == "sp" and compChoice == "l":
         print("Lizard poisons Spock - Computer wins this round!")
         time.sleep(1)
-        compScore = compScore + 1
-    elif userChoice[0].lower() == "k" and compChoice == "s":
+        userScore = compScore + 1
+    elif userChoice[0].lower() == "sp" and compChoice == "s":
         print("Spock smashes Scissors - User wins this round!")
         time.sleep(1)
         userScore = userScore + 1
-    elif userChoice[0].lower() == "s" and compChoice == "k":
+    elif userChoice[0].lower() == "s" and compChoice == "sp":
         print("Spock smashes Scissors - Computer wins this round!")
         time.sleep(1)
         compScore = compScore + 1
@@ -81,19 +81,19 @@ while True: #Infinite Loop
         print("Lizard eats Paper - Computer wins this round!")
         time.sleep(1)
         compScore = compScore + 1
-    elif userChoice[0].lower() == "p" and compChoice == "k":
+    elif userChoice[0].lower() == "p" and compChoice == "sp":
         print("Paper disproves Spock - User wins this round!")
         time.sleep(1)
         userScore = userScore + 1
-    elif userChoice[0].lower() == "k" and compChoice == "p":
+    elif userChoice[0].lower() == "sp" and compChoice == "p":
         print("Paper disproves Spock - Computer wins this round!")
         time.sleep(1)
         compScore = compScore + 1
-    elif userChoice[0].lower() == "k" and compChoice == "r":
+    elif userChoice[0].lower() == "sp" and compChoice == "r":
         print("Spock vapourises Rock - User wins this round!")
         time.sleep(1)
         userScore = userScore + 1
-    elif userChoice[0].lower() == "r" and compChoice == "k":
+    elif userChoice[0].lower() == "r" and compChoice == "sp":
         print("Spock vapourises Rock - Computer wins this round!")
         time.sleep(1)
         compScore = compScore + 1
